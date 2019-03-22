@@ -1,0 +1,785 @@
+/*
+
+	00. Body and things that we don't change
+	01. Navigation
+	02. Slider Fast Edition
+	03. Our Method Section
+	04. Selected Work Section
+	05. Others Works Section
+	06. Our Family Section
+	07. Twitter Module
+	08. What People Think
+	09. Subscribe to Newsletter Module
+	10. Contact & Footer Section
+	11. Media Queries
+			
+*/
+
+
+/* 00. BODY AND THINGS THAT WE DONT CHANGE ================================================== */
+
+
+
+html, body {
+		color:#55606E;}
+
+/* ROW */
+
+.row {
+		margin: auto;
+		text-align: center;}
+
+/* LITTLE ANNIMATION FOR EVERY LINK */
+
+a {
+		color:#ff7c6c;
+		text-decoration: none; 
+		-webkit-transition: all 0.3s ease-in-out;
+	    -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;}
+
+a:hover {color:#55606E;}
+
+.selected {color:#55606E;}
+
+
+/* TITLE OF EACH SECTION */
+
+h2 {
+		color:#363F48;
+		font-size:42px;
+		line-height: 60px;
+		font-weight: 100;}
+
+/* SUBTITLES OF EACH SECTION */
+
+.lead {
+		font-family: "OpenSansLight", sans-serif;
+		font-size:16px; 
+		line-height: 25px; 
+		color:#898e96; 
+		 }
+
+
+.lead a {color: #ff7c6c;}
+
+
+h4 {	
+		font-size: 1.125em;
+		color: #363F48;
+		font-family: "OpenSansSemiBold",sans-serif; 
+		text-transform: uppercase;}
+
+.left {
+		text-align: left;}
+
+.right {
+		text-align: right;}
+
+.top-tittle { margin:20px auto 60px;}
+
+
+/* 01. NAVIGATION ================================================== */
+
+
+#navblock {
+
+		height:60px; 
+		background:#FFF;}
+
+
+#nav {
+		position: fixed;
+		z-index: 9999;
+		height:60px;
+		background: rgba(42,52,62, 0.9); 
+		border-bottom: 1px solid rgba(255,255,255, 0.2);
+		box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, .1);}
+
+#nav .fixed {border-bottom:  1px solid #4b5863;}
+
+
+#nav .logo {
+		padding:10px 0; width:100%;
+		opacity: 0.6;}
+
+#nav .logo:hover { 
+		opacity: 1;}
+
+
+.navbar ul {padding:0;}
+		
+.navbar ul li {
+		border-bottom: none;
+		font-size: 11px;
+		text-transform: uppercase;}
+		
+.navbar ul li a {color:#FFF;}
+
+#nav i {font-size:30px;}
+
+
+
+/* 02. SLIDER FAST EDIT ================================================== */
+
+
+/* SLIDER TITLE */
+
+  #sequence .title {
+   		color:#FFF;}
+ 
+/* SLIDER SUBTITLE */
+   		
+  #sequence .subtitle {
+    	color:#A7ABB1;
+    	font-family: "OpenSansLight", sans-serif;}
+
+/* 03. OUR METHOD ================================================== */
+
+#method {
+		padding:70px 0;}
+
+#method img{ 
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;} 
+		
+#method img:hover{
+		opacity: 0.7; 
+		-webkit-transform: scale(0.9); 
+		transform: scale(0.9); }
+
+
+/* 04. SELECTED WORK ================================================== */
+
+
+#portfolio {
+		background: #f9f9f9; 
+		padding: 70px 0;}
+		
+
+#portfolio h4 {
+		margin-top:50px; 
+		margin-bottom: 10px; }
+
+
+.selected {
+		padding:20px 0 10px;}
+
+/* DIVIDER BETWEEN TWO SELECTED WORK */
+
+.divider {
+		border-top:1px solid rgba(91,105,120,0.2);}
+
+/* PREVIEW BUTTON */
+
+.button-preview {
+		color:#fff;
+		font-size:13px;
+		margin:20px 0;
+		width:200px;
+		border-radius: 2px;
+		text-transform:uppercase;
+		padding:8px 30px 8px 20px !important;
+		background:url('../img/arrows.png') #ff7c6c right center no-repeat ;
+		-webkit-transition:0.6s all cubic-bezier(0.1, 0.1, 0.08, 1.9);
+		-moz-transition:0.6s all cubic-bezier(0.1, 0.1, 0.08, 1.9);
+		-o-transition:0.6s all cubic-bezier(0.1, 0.1, 0.08, 1.9);
+		-ms-transition:0.6s all cubic-bezier(0.1, 0.1, 0.08, 1.9);
+		transition:0.6s all cubic-bezier(0.1, 0.1, 0.08, 1.9);
+		-webkit-transition: all 0.3s ease-in-out;}
+	
+.button-preview a  {
+		color:#FFF;
+		text-decoration:none ;}
+
+.button-preview:hover {
+		background:url('../img/arrows.png') #ff9385 15px center no-repeat ;
+		padding:8px 20px 8px 30px !important;
+		cursor:pointer;}
+
+
+/* 05. OTHERS WORKS ================================================== */
+
+
+#projects {
+		background: #FFF; 
+		padding: 70px 0;}
+
+/* PROJET GRID */
+
+#projects_grid {
+    overflow: hidden;
+}
+
+.items {
+    width: 100%;
+    clear: both;
+}
+
+.item {width:100%; height: 100%; margin-top:2%;}
+
+.items li img {
+    display: block;
+}
+.items:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.items li a,
+.items li a img {
+    display: block;
+    position: relative;
+}
+.items li a {
+    overflow: hidden
+}
+.items li a div {
+    position: absolute;
+    background: rgba(47, 67, 83, 0.8);
+    width: 100%;
+    height: 100%;
+}
+.items li a div h5 {
+    display: block;
+    padding: 10px 0;
+    margin: 50px 20px 20px 20px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 1.125em;
+	font-family: "OpenSansSemiBold",sans-serif;    
+    text-align: center;
+}
+.items li a div h5 span {
+    font-size: 12px;
+    display: block;
+    color: #ddd;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0.2px;
+    margin-top: 5px;
+}
+
+/* PROJET GRID : FILTER FONCTION */
+
+.filter {
+    padding: 0;
+    margin-bottom: 30px;
+}
+.filter li {
+    margin: 0;
+    background: none;
+    display: inline;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 4px;
+}
+.filter li a:hover,
+.filter li a.active {
+    background-color: #FF7C6C;
+    color: #FFF;
+}
+.filter li a {
+    color: #55606E;
+    display: inline-block;
+    background-color: #f8f8f8;
+    padding: 6px 20px 5px;
+    margin-bottom: 4px;
+}
+
+/* 06. OUR FAMILY ================================================== */
+
+
+#about {
+		background:#f9f9f9; 
+		padding: 70px 0;}
+
+
+#about h4 {
+		font-size: 1.125em;
+		margin-top:10px;}
+
+
+.portrait {
+		background: #fff; 
+		margin-top: 2%;}
+		
+
+.portrait img {min-width: 100%;}
+
+/* OUR FAMILY SOCIAL ICON */
+
+#about a i {
+		color:#7F8289; 
+		font-size:18px; 
+		padding:10px 0 0px 0; 
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;}
+
+/* OUR FAMILY SOCIAL ICON HOVER */
+#about a i:hover {
+		color:#7dd2e4;}
+
+/* TEXT JUSTIFY FOR TEXT OF PORTRAITS */
+
+#about .about {
+		padding:10px 20px; 
+		text-align: left;}
+
+
+/* 07. TWITTER MODULE ================================================== */
+
+#twitter_module {
+		background: #f9f9f9;}
+			
+.TwitterFeeds {
+		width:100%;
+		margin:20px auto;
+		text-align:center;}
+		
+.TwitterLogo {
+		width:24px;
+		height:20px;
+		margin:10px auto;}
+
+.tweet_time {
+		display: block;
+		margin-bottom: 0px;
+		font-size: 82%;}
+
+#ticker {
+        height: 6em;
+        overflow-y: hidden;
+        position: relative;}
+
+#ticker ul.tweet_list {
+      	position: relative;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;}
+
+#ticker ul.tweet_list li {
+        height: 6em;}
+
+#ticker .tweet_list .tweet_time a {
+		color:#4C4F55; 
+		border-bottom: none;}
+
+#ticker a {
+		border-bottom: 1px dotted #ff7c6c;} 
+
+#ticker a:hover {
+		border-bottom: 1px dotted #4C4F55;}
+		
+
+/* 08. WHAT PEOPLE THINK ================================================== */
+
+#feedbacks {
+		background:#fff; 
+		padding: 70px 0;}
+		
+/* TESTIMONIALS GRID */
+      
+.grid-testimonials
+		{
+		  overflow: hidden;
+		}
+		.grid-testimonials li
+		{
+		  float: left;
+		  list-style-type: none;
+		  padding-bottom: 3.125em
+		}
+		.grid-testimonials p
+		{
+		  line-height: 1.5em;
+		  margin: 0
+		}
+		.grid-testimonials-citation
+		{
+		  display: block;
+		  font-size: 1.125em;
+		  color: #363F48;
+		  font-family: "OpenSansSemiBold",sans-serif; 
+		  margin-top: 3em;
+		  text-transform: uppercase;
+		  text-align: center
+		}
+		.grid-testimonials li div
+		{
+		  border: 10px solid #f9f9f9;
+		  border-radius: 10px;
+		  padding: 2.125em 7.638888888888889%;
+		  position: relative;
+		}
+		.grid-testimonials .quote-arrow
+		{
+			background: #fff;
+			border-right:10px solid #f9f9f9;
+			border-bottom:10px solid #f9f9f9;
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -28px;
+			left: 50%;
+			margin-left: -25px;
+			width: 40px;
+			height: 40px;
+			-moz-transform:rotate(45deg);
+			-webkit-transform:rotate(45deg);
+		}
+		@media screen and (min-width: 50em) 
+		{
+			.grid-testimonials li
+		  {
+		    margin-right: 5%;
+		    width: 30%
+		  }
+			.grid-testimonials li:nth-child(3n)
+		  {
+		    margin-right: 0
+		  }
+		}
+
+
+/* 09. NEWSLETTER ================================================== */	
+
+#subscribe {
+		/* background: url('../img/bg2.jpg');/* BACKGROUND OF SUBSCRIBE ANY SIZE EDIT ALSO IN MEDIA QUERIES */ 
+		background: rgba(42,52,62, 0.9); 
+		background-position:center;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-attachment : fixed;  /* FIXED FOR IE */ 
+		padding: 60px 0; width:100%;}
+
+#subscribe  h4 {
+		color: #FFF;
+		font-size: 1.125em; 
+		padding:8px 0px;}
+
+/* SUBSCRIBE EMAIL FIELD  */
+				
+.subscribe input[type="email"] {
+		border:none;
+		width:100%;
+		font-size: 13px;
+		font-weight: 100;
+		background:  #FFF;
+		color:#B5B5B5;
+		padding: 13px 40px 12px 40px;
+		border-radius: 2px;
+		box-shadow: inset 0px 0px 0px 2px rgba(0,0,0,0.0);
+		background:#FFF url(../img/email.png);
+		background-position:3% 9px;
+		background-repeat:no-repeat;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;}
+
+/* SUBSCRIBE FOCUS ON  */
+
+.subscribe input[type="email"]:focus {
+		box-shadow: inset 0px 0px 0px 2px #DDD;
+		color:#555;}
+
+/* SUBSCRIBE SUBMIT BUTTON */
+
+.subscribe input[type="submit"]{
+		float: right;
+		display: block;
+		width:100%;
+		 padding: 13px 40px 10px 40px;
+		border: none;
+		border-radius: 2px;
+		cursor: pointer;
+		font-size: 13px;
+		color:#FFF;
+		background-color: #ff7c6c;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;}
+
+/* SUBSCRIBE SUBMIT BUTTON HOVER */
+
+.subscribe input[type="submit"]:hover{
+		background: #ff9385;}
+
+		
+/* 10. CONTACT & FOOTER ================================================== */
+
+#footer {
+		padding: 70px 0 20px;}
+
+
+.social {
+		padding: 50px 0 30px;}
+
+.social i {
+		font-size:23px; 
+		margin: 0 20px;}
+
+.social a {
+		color:#969BA2;}
+
+.social a:hover {
+		color:#7dd2e4;}
+
+
+.contact h4, .contact p {
+		margin-left: 15px;}
+
+.contact h4 {
+		font-size:16px; 
+		font-family: "OpenSansSemiBold",sans-serif; }
+		
+.contact p {
+		color:#7F8289; 
+		margin-top: 10px;}
+		
+.contact form label {float:left; padding-bottom: 5px;}
+		
+.contact form label span {color:#D1D1D1;}
+
+.contact form input,
+.contact form textarea{
+		font-family: "OpenSansLight";
+		font-size:13px;
+		-moz-transition:all .3s ease-in-out;
+		-ms-transition:all .3s ease-in-out;
+		-o-transition:all .3s ease-in-out;
+		-webkit-transition:all .3s ease-in-out;
+		border: 1px solid #C2C6CB;
+		border-radius: 2px 2px 2px 2px;
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05) inset;
+		color: #55606E;
+		resize: vertical;
+		font-size:12px;
+		margin-bottom: 15px;
+		letter-spacing:1px;
+		padding: 9px 10px 8px;
+		transition:all .3s ease-in-out;
+		width:100%;}
+
+/* SET A HEIGHT TO THE INPUT*/
+
+.contact form input{
+		height:40px;
+		resize: none;}
+
+/* SET A HEIGHT TO THE TEXTAREA*/
+
+.contact form textarea{
+		min-height:120px;
+		padding-top: 8px;}
+	
+/* BUTTON SENDER */
+
+.contact form .submit{
+		color:#FFF;
+		height:40px;
+		width: 150px;
+		border-radius: 2px;
+		letter-spacing:1px;
+	    float: left;
+	    display: block;
+		border: none;
+	    cursor: pointer;
+	    font-size: 13px;
+	    color:#FFF;
+	    background-color: #ff7c6c;
+	    -webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition: all 0.2s ease-in-out;
+	    -ms-transition: all 0.2s ease-in-out;
+	    -o-transition: all 0.2s ease-in-out;
+	    transition: all 0.2s ease-in-out;}
+
+/* BUTTON SENDER HOVER */
+
+.contact form .submit:hover{
+		background:#ff9385 ;
+		cursor:pointer;}
+
+/* INPUT AND TEXTAREA WHEN NOTHING  */
+
+.contact form input:required,
+.contact form textarea:required{
+		background:#FFF url(../img/invalid.png);
+		background-position:98% 6px;
+		background-repeat:no-repeat;
+		box-shadow:inherit;}
+
+/* INPUT AND TEXTAREA WHEN VALID : GOOD */
+
+.contact form input:required:valid,
+.contact form textarea:required:valid{
+		background:#FFF url(../img/valid.png);
+		background-position:98% 6px;
+		border:1px solid #BBB;
+		background-repeat:no-repeat;
+		color:#777;}
+
+/* INPUT AND TEXTAREA WHEN INVALID : NOT GOOD GOES RED */
+
+.contact form input:focus:invalid,
+.contact form textarea:focus:invalid{
+		background:#FFF url(../img/invalid-red.png) no-repeat 98% 6px;
+		border-color:#ec7e7e;
+		box-shadow:0 0 2px rgba(236,126,126,0.7);}
+		
+
+.contact .info {margin-top:25px;}
+
+#copyright {background: #FFF; }
+
+#copyright .row { padding:20px;  text-transform: uppercase; font-size:11px; font-family: "OpenSansLight", sans-serif;}
+
+
+/* 11. MEDIA QUERIES ================================================== */
+
+/* MAX WIDH 768PX */
+	
+@media screen and (max-width : 768px)  {
+							
+		.subscribe input[type="email"] { text-align: center; margin-bottom: 10px;}
+		
+		.contact form .submit {margin-bottom: 20px;}
+				
+		.contact .left  {margin-left: -20px; text-align: center;}
+		
+		.divider {border-top:none;}
+						
+		.social i {font-size:20px; margin: 0 15px;}
+		
+		.contact .left  {margin-left: -20px;}
+		
+		.contact form {margin-bottom: 50px;}
+		
+		#about img {width: 100%;}
+		
+		#about .portrait {width:48%;}
+		
+		#portfolio .row h4 {text-align: center; margin-top:0px;}
+		
+		#portfolio .row p {text-align: center;}
+		
+		.button-preview {margin:auto; margin: 15px auto;}
+				
+		#sequence .title { color:#FFF;}		
+		
+		.contact form .submit {width:100%;}
+		
+		#projects_grid .item {width:48%;}
+		
+		#nav .logo {max-width:25%;}
+		
+		.navbar ul li { 
+		background: ;
+		border-bottom: 1px solid #a6adb3; }
+		.navbar ul li:hover { 
+		background:#a6adb3;
+		border-bottom: 1px solid #a6adb3; }
+		.navbar ul li a {color:#55606E;}
+		.navbar ul li a:hover {color:#FFF;}
+	
+			
+}
+
+/* MAX WIDH 400PX */
+		
+@media screen and (max-width : 480px){
+		
+		h2 { font-size:28px;}
+				
+		.lead {font-size:15px;}
+		
+		.subscribe input[type="email"] { text-align: center; margin-bottom: 10px;}
+		
+		.contact form .submit {margin-bottom: 20px;}
+		
+		.social i {font-size:20px; margin: 0 9px;}
+		
+		#portfolio .row h4 {text-align: center;}
+		
+		#portfolio .row p {text-align: center;}
+						
+		.contact .left  {margin-left: -20px; text-align: center;}
+		
+		.button-preview {margin:auto; margin: 15px auto;}
+		
+		#about img {width: 100%;}
+		
+		#about .portrait {width:98%;}
+						
+		.divider {border-top:none;}
+		
+		#projects_grid .item {width:100%;}
+
+		#nav .logo {max-width:35%;}
+
+}
+
+
+/* FIREFOX FIX */
+@-moz-document url-prefix() { 
+	.filter li a {
+	    padding: 5px 20px 6px
+	}
+}
+.isotope-item {
+    z-index: 2;
+    display: block !important;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: top, left, opacity;
+    transition-property: transform, opacity;
+}
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
