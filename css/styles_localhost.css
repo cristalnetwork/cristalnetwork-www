@@ -1,0 +1,11 @@
+
+.main-area-wrapper::before {
+  
+  /*background-image:url(file:///home/tuti/inkiri/coming_soon/staging/images/bg_blockchain_4.jpeg) !important;*/
+  background-image:url(file:///home/tuti/inkiri/coming_soon/staging/images/bg_small.jpeg) !important;
+}
+
+.main-area::before {
+/*  background-image:url(file:///home/tuti/inkiri/coming_soon/staging/images/bg.jpg) !important;*/
+  
+}
